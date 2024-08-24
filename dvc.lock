@@ -84,3 +84,19 @@ stages:
       hash: md5
       md5: 651663e56f62d10ae3e07f10d2dfb27a
       size: 67855
+  model_evlaution:
+    cmd: python src/model_evaluation.py
+    deps:
+    - path: model.pkl
+      hash: md5
+      md5: 651663e56f62d10ae3e07f10d2dfb27a
+      size: 67855
+    - path: src/model_evaluation.py
+      hash: md5
+      md5: 08b695ef34369042ef7b9deb2182713d
+      size: 855
+    outs:
+    - path: metrics.json
+      hash: md5
+      md5: a46f98b24dea8d926b8bd3db61349323
+      size: 145
